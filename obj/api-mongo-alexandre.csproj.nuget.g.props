@@ -12,4 +12,27 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)mongodb.driver.core\2.11.4\contentFiles\any\netstandard2.0\Core\Compression\Snappy\lib\win\snappy32.dll" Condition="Exists('$(NuGetPackageRoot)mongodb.driver.core\2.11.4\contentFiles\any\netstandard2.0\Core\Compression\Snappy\lib\win\snappy32.dll')">
+      <NuGetPackageId>MongoDB.Driver.Core</NuGetPackageId>
+      <NuGetPackageVersion>2.11.4</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Private>False</Private>
+      <Link>Core\Compression\Snappy\lib\win\snappy32.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)mongodb.driver.core\2.11.4\contentFiles\any\netstandard2.0\Core\Compression\Snappy\lib\win\snappy64.dll" Condition="Exists('$(NuGetPackageRoot)mongodb.driver.core\2.11.4\contentFiles\any\netstandard2.0\Core\Compression\Snappy\lib\win\snappy64.dll')">
+      <NuGetPackageId>MongoDB.Driver.Core</NuGetPackageId>
+      <NuGetPackageVersion>2.11.4</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Private>False</Private>
+      <Link>Core\Compression\Snappy\lib\win\snappy64.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)mongodb.driver.core\2.11.4\contentFiles\any\netstandard2.0\Core\Compression\Zstandard\lib\win\libzstd.dll" Condition="Exists('$(NuGetPackageRoot)mongodb.driver.core\2.11.4\contentFiles\any\netstandard2.0\Core\Compression\Zstandard\lib\win\libzstd.dll')">
+      <NuGetPackageId>MongoDB.Driver.Core</NuGetPackageId>
+      <NuGetPackageVersion>2.11.4</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Private>False</Private>
+      <Link>Core\Compression\Zstandard\lib\win\libzstd.dll</Link>
+    </Content>
+  </ItemGroup>
 </Project>
